@@ -1,0 +1,27 @@
+import java.util.*;
+public class task
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        String s=sc.next();
+        String s1="";
+        char[] vow={'a','e','i','o','u','y'};
+        s=s.toLowerCase();
+        int j=0;
+        for(int i=0;i<s.length();i++)
+        {
+        char ch=s.charAt(i);
+        while(j!=6)
+        {
+        if(ch!=vow[j])
+        j++;
+        else
+        break;
+            }
+            if(j==6)
+            s1=s1+"."+ch;
+            j=0;
+        }
+        System.out.println(s1);
+}} 
